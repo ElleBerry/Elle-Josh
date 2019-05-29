@@ -9,25 +9,21 @@ import java.util.List;
 
 public class ContactsManager {
 
-    public ContactsManager() {
-    }
-
-
     public static void main(String[] args) {
-        HashMap<String ,menu> menu = new HashMap<>();
-        menu.put("1. View Contacts",new ArrayList<menu>());
-        menu.put("2. Add a new contacts",new ArrayList<menu>());
-        menu.put("3. Search by contact name",new ArrayList<menu>());
-        menu.put("4. Delete an existing contact",new ArrayList<menu>());
-        menu.put("5. Exit",new ArrayList<menu>());
-        menu.put("Enter a number",new ArrayList<menu>());
-
+        Input input = new Input;
+//        HashMap<String ,ArrayList<menuItem>> menu = new HashMap<>();
+//        menu.put("1. View Contacts",new ArrayList<>());
+//        menu.put("2. Add a new contacts",new ArrayList<>());
+//        menu.put("3. Search by contact name",new ArrayList<>());
+//        menu.put("4. Delete an existing contact",new ArrayList<>());
+//        menu.put("5. Exit",new ArrayList<>());
 
         String directory = "data";
 
         Path folder = Paths.get("data");
         Path file = Paths.get(directory, "contacts.txt");
-
+        System.out.println("Enter a number");
+if(input.getString(""))
         if (Files.notExists(folder)) {
             try {
                 Files.createDirectories(folder);
